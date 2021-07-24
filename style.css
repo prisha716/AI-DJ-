@@ -32,3 +32,11 @@ body{
     font-size: 23px;
     margin: 15px;
 }
+.play_button{
+width:140px;
+font-size: 23px;
+}
+canvas {
+  border: 5px 5px solid springgreen;
+  border-radius:  20px; 
+  }
