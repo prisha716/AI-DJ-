@@ -33,6 +33,15 @@ function gotPoses(results) {
       }
 function draw() {
     image( video,0,0,600,500);
+    fill("blue");
+    stroke("green");
+
+    circle(leftWristX,leftWristY,20);
+    inNumberleftwristY=Number(leftWristY);
+    remove_decimal=floor(inNumberleftwristY);
+    volume=remove_decimal/500;
+    document.getElementById("volume").innerHTML="Volume=" + volume;
+    song.setVolume(volume);
 }
 function play() {
     song.play();
